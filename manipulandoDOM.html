@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1 id="title">Este é um título H1</h1>
+<button id="button">Clique aqui para destacar</button>
+<button id="buttonReset">Reset</button>
+
+<script>    
+        document.getElementById('button').addEventListener('click', function(){
+            document.getElementById('title').textContent = 'Novo texto alterado pelo JAVASCRIPT'
+            document.getElementById('title').style.border = '3px solid blue'
+        })
+        document.getElementById('buttonReset').addEventListener('click', function(){
+            let txt = document.getElementById('title')
+            txt.textContent = 'Este é um título H1'
+            txt.style.border = 'none'
+        })
+    </script>
+</body>
+</html>
