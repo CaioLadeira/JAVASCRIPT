@@ -18,8 +18,8 @@
         let botao = document.getElementById('botao')
         botao.addEventListener('click', function(){
             const novoItem = document.createElement('li')
-            const buttonToRemove = document.createElement('button','Remover')
-            buttonToRemove.innerHTML = 'Remover'
+            const buttonToRemove = document.createElement('button')
+            buttonToRemove.textContent = 'Remover'
             buttonToRemove.style.marginLeft = '5px'
             buttonToRemove.setAttribute('class', 'remover')
             novoItem.textContent = `Novo Item`
